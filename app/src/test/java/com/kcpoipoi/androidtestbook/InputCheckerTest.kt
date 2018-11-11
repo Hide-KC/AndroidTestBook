@@ -16,7 +16,7 @@ class InputCheckerTest {
     lateinit var target: InputChecker
 
     @Test
-    fun isValid_givenLessThan3_returnsFlase(){
+    fun isValid_givenLessThan3_returnsFalse(){
         val actual = target.isValid("ab")
         assertThat(actual, `is`(false))
     }
